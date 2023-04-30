@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+        .box1{
+            height: 600px;
+            width: 900px;
+            color: crimson;
+            font-size: 30px;
+            background-color: rgba(104, 140, 145, 0.534);
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>data 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aspernatur cum praesentium, delectus dolore magnam quibusdam quidem beatae fuga, vero repudiandae velit modi error ducimus quas facere, accusantium laudantium quis?</p>
+        <button class="after">AFTER</button>
+        <button class="before">BEFORE</button>
+
+    </div>
+<!-- after and before use if we want data outside the box after and before respectively -->
+    <script>
+        $(document).ready(function(){
+            $(".after").click(function(){
+                $(".box1").after("<h2>DATA2</h2>")
+            })
+            $(".before").click(function(){
+                $(".box1").before("<h3>DATA0</h3>")
+            })
+        })
+    </script>
+</body>
+</html>
