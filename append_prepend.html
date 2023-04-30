@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+        .box{
+            height: 600px;
+            width: 900px;
+            color: crimson;
+            background-color: chartreuse;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>append - after</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa laudantium pariatur rerum dicta repellendus non harum. Laboriosam aspernatur repellat quia, architecto, non soluta velit, culpa nesciunt dignissimos commodi omnis voluptas.</p>
+        <h2>prepend - before</h2>
+    </div>
+    <button class="append">APPEND</button>
+    <button class="prepend">PREPEND</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".append").click(function(){
+                $(".box").append("<h2>AFTER</h2>")
+            })
+            $(".prepend").click(function(){
+                $(".box").prepend("<h3>BEFORE</h3>")
+            })
+        })
+    </script>
+</body>
+</html>
