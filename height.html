@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+        div{
+            height: 50px;
+            width: 300px;
+            background-color: darkgreen;
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <script>
+        $(document).ready(function(){
+            $("div").one("click",function(){
+                var imageUrl = 
+"pexels-kate-andreeshcheva-14245756.jpg";
+                $(this).height(500).css(
+                   "background-image", "url(" + imageUrl + ")"
+            
+                )
+            })
+        })
+    </script>
+</body>
+</html>
