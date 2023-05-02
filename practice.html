@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+        .box{
+            height: 200px;
+            width: 500px;
+            border: 2px solid red;
+            transition: 2s;
+        }
+        .box2{
+            height: 400px;
+            width: 800px;
+            background-image: linear-gradient(yellow,pink,blue);
+            font-size: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>JQUERY</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem atque ad? Laboriosam maxime facere odit? Dignissimos doloribus minima sit quisquam, nihil eum a distinctio explicabo dolores, dolorem tempora voluptas.</p>
+    </div>
+
+    <div class="box2">
+        <h2>JQ</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem atque ad? Laboriosam maxime facere odit? Dignissimos doloribus minima sit quisquam, nihil eum a distinctio explicabo dolores, dolorem tempora voluptas.</p>
+    </div>
+    <!-- <button class="add">add</button>
+    <button class="remove">remove</button> -->
+    <!-- <button class="toggle">toggle</button> -->
+    <!-- <button class="has">hasclass</button> -->
+    <!-- <button class="clone">clone</button> -->
+    <button class="height">height</button>
+    <script>
+        $(document).ready(function(){
+            // $(".add").click(function(){
+            //     $(".box").addClass("box2")
+            // })
+            // $(".remove").click(function(){
+            //     $(".box").removeClass("box2")
+            // })
+            // $(".toggle").click(function(){
+            //     $(".box").toggleClass("box2")
+            // })
+            // $(".has").click(function(){
+            //     console.log($("box").hasClass("bg"));
+            // })
+            // $(".clone").click(function(){
+            //     $(".box h1").clone().prependTo(".box2")
+            // })
+            // $(".height").click(function(){
+            //     $(".box2").width(300).css({
+            //         backgroundColor: "pink"
+            //     })
+            // })
+        })
+    </script>
+</body>
+</html>
