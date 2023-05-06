@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 300px;
+            width: 300px;
+            display: none;
+            margin: 10px;
+        }
+        .box1{
+            background-color: brown;
+        }
+        .box2{
+            background-color: brown;
+        }
+        .box3{
+            background-color: brown;
+        }
+    </style>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button class="fadein">fadein</button>
+    
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    
+
+    <script>
+        $(document).ready(function(){
+            $(".fadein").click(function(){
+            $(".box1").fadeIn()
+            $(".box2").fadeIn(2000)
+            $(".box3").fadeIn(3000)
+        })
+        })
+    </script>
+</body>
+</html>
