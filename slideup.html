@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <style>
+        .flip , .panel{
+            border: 2px dashed;
+            background-color: chartreuse;
+            font-size: 25px;
+            text-align: center;
+        }
+        .panel{
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $(".flip").click(function(){
+                $(".panel").slideUp(2000)
+            })
+            $(".flip").dblclick(function(){
+                $(".panel").slideDown(2000)
+            })
+        })
+    </script>
+    <div class="flip">click for slide up & double click for slide down</div>
+    <div class="panel">"HELLOOO WORLD"</div>
+</body>
+</html>
