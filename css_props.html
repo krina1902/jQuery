@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            margin: 30px;
+            display: inline-block;
+            font-size: 25px;
+        }
+        #box1{
+            background-color: chartreuse;
+            border: 10px solid yellow;
+        }
+        #box2{
+            background-color: blueviolet;
+            border: 10px solid pink;
+
+        }
+        #box3{
+            background-color: crimson;
+            border: 10px solid orangered;
+
+        }
+        #box4{
+            background-color: darkgreen;
+            border: 10px solid violet;
+
+        }
+    </style>
+</head>
+<body>
+    <p id="result">&nbsp;</p>
+    <div id="box1">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+<script>
+$("div").click(function() {
+    var k = ["Div has the following css properties"];
+    var styleprops = $(this).css([
+        "width","height","background-color","padding","margin","border"
+        ]);
+
+    $(this).css("background-color","red");
+    $.each(styleprops, function(prop, value){
+        k.push(prop + ":" + value);
+    });
+    $("#result").html(k.join("<hr>"));
+});
+</script>
+</body>
+</html>
